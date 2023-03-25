@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #D1DAF5;
+    font-family: 'Poppins';
+}
+
+header {
+    margin: 18em 15em 0;
+}
+
+h1 {
+    font-size: 5rem; margin: 0;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: moveUp 1s .8s forwards;
+}
+p {
+    font-size: 2rem;margin: 0;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: moveUp 1s 1s forwards;
+}
+
+section {
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+iframe {
+    width: 100vw;
+    border: none;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    overflow: hidden;
+    background: #D1DAF5;
+}
+
+@keyframes moveUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
